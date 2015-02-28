@@ -8,8 +8,8 @@ library
   build-depends:     base
   exposed-modules:   Foo
 
-executable demo
-  hs-source-dirs:    demo
+executable exec
+  hs-source-dirs:    exec
   main-is:           Main.hs
   build-depends:     base
                    , foo

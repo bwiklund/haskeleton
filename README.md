@@ -9,7 +9,7 @@ To build an executable:
 ```
 cabal configure
 cabal build
-./dist/build/demo/demo
+./dist/build/exec/exec
 ```
 
 To build and run tests
