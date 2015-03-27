@@ -3,6 +3,7 @@ module Main (main) where
 import Test.HUnit
 
 import Foo
+import System.Exit
 
 tests = TestList [
 
@@ -11,5 +12,5 @@ tests = TestList [
   ]
 
 main = do
-  _ <- runTestTT $ tests
-  return ()
+  counts <- runTestTT $ tests
+  if (errors counts + failures counts == 0) then exitSuccess else exitFailure
